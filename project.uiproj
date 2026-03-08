@@ -1,0 +1,6 @@
+{
+  "Name": "MicrocenterMonitorBot",
+  "ProjectType": "Process",
+  "Description": "Automation that monitors pricing for selected PC components",
+  "MainFile": "Main.xaml"
+}
