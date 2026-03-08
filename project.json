@@ -4,6 +4,7 @@
   "description": "Automation that monitors pricing for selected PC components",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.4.1]",
     "UiPath.System.Activities": "[25.12.1]"
   },
   "webServices": [],
