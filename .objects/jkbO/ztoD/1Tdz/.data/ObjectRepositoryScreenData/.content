@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="JXEmbL3sgkSbSgOCRn-hPw" Reference="w5B_KOq9rkqeoP6b0TD80Q/1TdzkdMiQEKESWBtR77uTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-1448, -8, 1456, 2536" BrowserType="Chrome" ContentHash="BAmaeptUjkGoGIxVe_1Z0w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABMSURBVDhPY/hPIQAbYCzKTBJGBmQZAMIwQLYBIEw7A3ABY1EWDHU4DcAuNmrAwBrw6cs3IE2BAX///vtvrKyGIgYCYAMoARQa8P8/AOeJVQidm5MEAAAAAElFTkSuQmCC" Reference="w5B_KOq9rkqeoP6b0TD80Q/1TdzkdMiQEKESWBtR77uTQ" Selector="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" Url="https://www.microcenter.com/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="c928713804f38aa333d82f3bfb6486ce.jpg" xmlns="">03F24UGx-rUWCsQdcV-uQ2Q</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

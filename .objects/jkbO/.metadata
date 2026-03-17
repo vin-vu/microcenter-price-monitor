@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Micro Center - Computer & Electronics Retailer - Shop Now",
+  "Type": "App",
+  "Id": "jkbOLspp90-4jysAkxZ80A",
+  "Reference": "w5B_KOq9rkqeoP6b0TD80Q/jkbOLspp90-4jysAkxZ80A",
+  "Created": "2026-03-12T02:39:53.7579637Z",
+  "Updated": "2026-03-12T02:39:53.7579637Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

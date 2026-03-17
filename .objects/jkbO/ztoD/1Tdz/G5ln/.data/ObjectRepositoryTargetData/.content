@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="n3SJn1pT8UWuSDsayVBLsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="microcenter.com" CVScreenId="30998c76-15f1-4495-b5e8-cb7b41f72cf6" CvElementArea="240, 236, 454, 36" CvType="InputBox" DesignTimeRectangle="240, 236, 454, 36" ElementType="InputBox" ElementVisibilityArgument="Interactive" Guid="e613df67-3c7d-48c9-a4bb-4e124c87fe23" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now - Goog*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="59fea7db-5d1a-42d9-8ab1-6e0cdf3a73ef" CvTextArea="246, 247, 181, 17" CvTextArgument="What can we help you find?" CvType="Text" DesignTimeRectangle="246, 247, 181, 17" ElementType="Text" Guid="b9f1a6d3-edab-460f-820b-fe064f5b7236" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b744b349c7238ddb3a2c5f1b93e3fbd.jpg" xmlns="">0vuMycwUPVk60KSO2-GdHcA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

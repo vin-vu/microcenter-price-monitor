@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Micro Center - Computer & Electronics ",
+  "Type": "Screen",
+  "Id": "1TdzkdMiQEKESWBtR77uTQ",
+  "Reference": "w5B_KOq9rkqeoP6b0TD80Q/1TdzkdMiQEKESWBtR77uTQ",
+  "ParentRef": "w5B_KOq9rkqeoP6b0TD80Q/ztoD1U61u0OJwt-ej_aLJw",
+  "Created": "2026-03-12T02:39:53.9350766Z",
+  "Updated": "2026-03-12T02:39:53.9350766Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
