@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "DIV logo",
+  "Name": "Check App State - Search Input",
   "Type": "Element",
   "TaxonomyType": "Input",
-  "Id": "zXLg_SXw4US35NuWy3hCMA",
-  "Reference": "w5B_KOq9rkqeoP6b0TD80Q/zXLg_SXw4US35NuWy3hCMA",
+  "Id": "prn5dFqfUkK5l_VJQ2f0aw",
+  "Reference": "w5B_KOq9rkqeoP6b0TD80Q/prn5dFqfUkK5l_VJQ2f0aw",
   "ParentRef": "w5B_KOq9rkqeoP6b0TD80Q/1TdzkdMiQEKESWBtR77uTQ",
-  "Created": "2026-03-18T19:12:43.8908549Z",
-  "Updated": "2026-03-18T19:12:43.8908549Z",
+  "Created": "2026-03-18T20:47:47.09656Z",
+  "Updated": "2026-03-18T20:47:47.09656Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"

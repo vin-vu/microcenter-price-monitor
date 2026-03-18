@@ -1,0 +1,39 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|xbgfNzgbNKGfhOh5UPuLmyrjDhXuq2H35cHr1MQNHI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Title",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "URL",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Stock",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Price",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|Q8klLp2kpGukNpA7Pr3STb5A0xIyGycuzH0l03leaE",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="UDlbZO8N10mfBKS2dcHXUw" Reference="w5B_KOq9rkqeoP6b0TD80Q/eBaGuRq85EiyLes-h5BjNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="microcenter.com" CVScreenId="0c4b4243-c4d1-4627-847b-54eef9c4be87" DesignTimeRectangle="241, 238, 463, 33" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="6196c542-a27a-4e01-b321-8675d8d7c36d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="a7f042fc7ad6f2a12cf4045310ad6a02.jpg" xmlns="">0WNilY3r-bkqTFFa7GvG9JA</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

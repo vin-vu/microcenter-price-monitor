@@ -118,9 +118,10 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2644,3279" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2523,3275" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtProducts" />
     </Sequence.Variables>
@@ -136,26 +137,26 @@
         </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,3074" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,3070" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,2880" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,2876" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Products Data Table" sap:VirtualizedContainerService.HintSize="556,2785" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Products Data Table" sap:VirtualizedContainerService.HintSize="556,2781" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,2608" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,2604" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="SearchTerm" />
                     </Sequence.Variables>
@@ -164,7 +165,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Search Products Sequence" sap:VirtualizedContainerService.HintSize="520,2544" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Search Products Sequence" sap:VirtualizedContainerService.HintSize="520,2540" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -172,14 +173,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message - Searching Product" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
-                        <ui:LogMessage.Message>
-                          <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"Searching for product: " + SearchTerm</CSharpValue>
-                          </InArgument>
-                        </ui:LogMessage.Message>
-                      </ui:LogMessage>
-                      <Assign sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">
                             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">SearchTerm</CSharpReference>
@@ -191,6 +185,13 @@
                           </InArgument>
                         </Assign.Value>
                       </Assign>
+                      <ui:LogMessage DisplayName="Log Message - Searching Product" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"Searching for product: " + SearchTerm</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
                       <uix:NCheckState DisplayName="Check App State - Search Input" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486,888" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,305" sap2010:WorkflowViewState.IdRef="Sequence_7">

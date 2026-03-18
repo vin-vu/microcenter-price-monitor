@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yk2foJ9wpEu406nE50uEjw" Reference="w5B_KOq9rkqeoP6b0TD80Q/L0QhH3rT80mV4t7gtcYFnA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.microcenter.com/search/search_results.aspx?N=&amp;cat=&amp;Ntt=7800x3d&amp;searchButton=search" ContentHash="98HqHHnU_kugsDc5wSjkmA" DesignTimeRectangle="353, 503, 966, 2863" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='productGrid' tag='UL' /&gt;" Guid="32d00d66-d2cc-4a98-ae5b-fdc655e2c05e" Reference="w5B_KOq9rkqeoP6b0TD80Q/L0QhH3rT80mV4t7gtcYFnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='7800x3d : Micro Center' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="473ebdf5e3d7c4f2ee60c7f3eed42127.jpg" xmlns="">0ga53lsPbZEaV9rwIdN0Hpw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
+    <x:Null x:Key="NextLinkTarget" />
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='URL'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;true&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Stock'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column7' Name='Price'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
