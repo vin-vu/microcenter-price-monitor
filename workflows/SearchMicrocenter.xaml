@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" this:Sequence.in_SearchTerm="7800x3d" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_SearchTerm" Type="InArgument(x:String)" />
     <x:Property Name="in_ProductName" Type="InArgument(x:String)" />
@@ -43,6 +43,8 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -102,64 +104,86 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="2663,957" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="2523,1439" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Searching Product" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage DisplayName="Log Message - Searching Product" sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"Searching for product: " + in_SearchTerm</CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,728" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1210" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,534" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1016" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="0.75" DisplayName="Type Into 'INPUT search-query'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="microcenter.com/search/search_results.aspx" CVScreenId="53b166bf-da42-40b4-bd59-c27372b3aac6" ContentHash="wHrvDhgQJEeQEkqby8pOQg" CvTextArea="246, 196, 56, 14" CvTextArgument="rtx 5080" CvType="Text" DesignTimeRectangle="241, 238, 463, 33" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="368eca2c-2ab6-428f-b364-8e474d5481dc" InformativeScreenshot="6601d98c1a5bcec5283de7f1284f517a.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/eBaGuRq85EiyLes-h5BjNg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='rtx 5080 : Micro Center' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="671, 238, 33, 33" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='submit btn' aaname='search for products' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='search' /&gt;" Guid="1b9f3935-1541-489a-b3a7-509a9bcb23a4" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NTypeInto.Target>
-              <uix:NTypeInto.Text>
-                <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_SearchTerm</CSharpValue>
-                </InArgument>
-              </uix:NTypeInto.Text>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
-            </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="0.73" DisplayName="Click 'search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="microcenter.com" ContentHash="Xq5an6BOJ0a-FSku3dUGTQ" DesignTimeRectangle="671, 186, 33, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="753fb702-f6fb-449d-b5bc-c6a836eb32df" InformativeScreenshot="414b8264a4dc2f38a97fc6fa0153e10c.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/c2xQTDMsak2DKr0gKVeuDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-              </uix:NClick.Target>
-            </uix:NClick>
+            <uix:NCheckState DisplayName="Check Search Input State" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,921" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,495" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT search-query'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
+                    <uix:NTypeInto.EmptyFieldMode>
+                      <InArgument x:TypeArguments="uix:NEmptyFieldMode">
+                        <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.EmptyFieldMode>
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="microcenter.com" CVScreenId="0c4b4243-c4d1-4627-847b-54eef9c4be87" ContentHash="UDlbZO8N10mfBKS2dcHXUw" DesignTimeRectangle="241, 238, 463, 33" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="6196c542-a27a-4e01-b321-8675d8d7c36d" InformativeScreenshot="a7f042fc7ad6f2a12cf4045310ad6a02.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/eBaGuRq85EiyLes-h5BjNg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_SearchTerm</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="microcenter.com" ContentHash="tfrxckCz30ulqq2uaH3A8g" DesignTimeRectangle="671, 238, 33, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="753fb702-f6fb-449d-b5bc-c6a836eb32df" InformativeScreenshot="f7f8037d0fcc784b5f8839ba63da62b4.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/c2xQTDMsak2DKr0gKVeuDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="microcenter.com" CVScreenId="2479d505-75a2-4d2c-8e3f-c62d5297fec0" ContentHash="QpOTWrq0FU2YgsywKNjR5A" DesignTimeRectangle="241, 238, 463, 33" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="aaf6abd2-e30b-409e-90a3-dcca54ab3432" InformativeScreenshot="70ccdee88d9b923a526fe84d95cd220c.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/zXLg_SXw4US35NuWy3hCMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

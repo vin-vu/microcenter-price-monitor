@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QpOTWrq0FU2YgsywKNjR5A" Reference="w5B_KOq9rkqeoP6b0TD80Q/zXLg_SXw4US35NuWy3hCMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="microcenter.com" CVScreenId="2479d505-75a2-4d2c-8e3f-c62d5297fec0" DesignTimeRectangle="241, 238, 463, 33" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="aaf6abd2-e30b-409e-90a3-dcca54ab3432" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="70ccdee88d9b923a526fe84d95cd220c.jpg" xmlns="">0FNdObSUNqk-MIVIEZnvx6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

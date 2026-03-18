@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Xq5an6BOJ0a-FSku3dUGTQ" Reference="w5B_KOq9rkqeoP6b0TD80Q/c2xQTDMsak2DKr0gKVeuDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="tfrxckCz30ulqq2uaH3A8g" Reference="w5B_KOq9rkqeoP6b0TD80Q/c2xQTDMsak2DKr0gKVeuDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="microcenter.com" DesignTimeRectangle="671, 186, 33, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="753fb702-f6fb-449d-b5bc-c6a836eb32df" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="414b8264a4dc2f38a97fc6fa0153e10c.jpg" xmlns="">0Kt7bmwIh2ECMrsLCJ2hqfg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="microcenter.com" DesignTimeRectangle="671, 238, 33, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="753fb702-f6fb-449d-b5bc-c6a836eb32df" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Micro Center - Computer &amp;amp; Electronics Retailer - Shop Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f7f8037d0fcc784b5f8839ba63da62b4.jpg" xmlns="">0ynfwZcsr9U-VE1uv49h5sQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
