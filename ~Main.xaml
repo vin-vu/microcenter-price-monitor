@@ -118,9 +118,10 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2489,8557" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2489,7994" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtProducts" />
     </Sequence.Variables>
@@ -136,26 +137,26 @@
         </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="848,8352" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Micro Center - Computer &amp; Electronics" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="848,7789" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="fa7c9596-f662-48f3-945f-acc68b4ccab7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="846,8158" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="846,7595" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Products Data Table" sap:VirtualizedContainerService.HintSize="812,8063" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Products Data Table" sap:VirtualizedContainerService.HintSize="812,7500" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="810,7886" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="810,7323" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="SearchTerm" />
                     </Sequence.Variables>
@@ -164,7 +165,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Search Products Sequence" sap:VirtualizedContainerService.HintSize="776,7822" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence sap2010:Annotation.AnnotationText="Sequence to search Microcenter products, extract results, and write output" DisplayName="Search Products Sequence" sap:VirtualizedContainerService.HintSize="776,7259" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -257,7 +258,7 @@
                         </uix:NClick.Target>
                       </uix:NClick>
                       <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="742,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                      <Sequence sap2010:Annotation.AnnotationText="Scrape products results after search" DisplayName="Scape Products Sequence" sap:VirtualizedContainerService.HintSize="742,6129" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence sap2010:Annotation.AnnotationText="Scrape products results after search" DisplayName="Scape Products Sequence" sap:VirtualizedContainerService.HintSize="742,5566" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="sd:DataTable" Name="dtResults" />
                         </Sequence.Variables>
@@ -284,13 +285,13 @@
                             <uix:TargetAnchorable BrowserURL="https://www.microcenter.com/search/search_results.aspx?N=&amp;cat=&amp;Ntt=7800x3d&amp;searchButton=search" ContentHash="yk2foJ9wpEu406nE50uEjw" DesignTimeRectangle="353, 503, 966, 2863" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='productGrid' tag='UL' /&gt;" Guid="32d00d66-d2cc-4a98-ae5b-fdc655e2c05e" InformativeScreenshot="473ebdf5e3d7c4f2ee60c7f3eed42127.jpg" Reference="w5B_KOq9rkqeoP6b0TD80Q/L0QhH3rT80mV4t7gtcYFnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='7800x3d : Micro Center' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NExtractDataGeneric.Target>
                         </uix:NExtractDataGeneric>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Results Data Table" sap:VirtualizedContainerService.HintSize="708,5681" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Results Data Table" sap:VirtualizedContainerService.HintSize="708,5118" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="706,5504" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="706,4941" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="Title" />
                                   <Variable x:TypeArguments="x:String" Name="PriceText" />
@@ -300,7 +301,6 @@
                                   <Variable x:TypeArguments="x:Boolean" Name="inStock" />
                                   <Variable x:TypeArguments="x:String" Name="LowerTitle" />
                                   <Variable x:TypeArguments="x:String" Name="SearchTermNormalized" />
-                                  <Variable x:TypeArguments="x:Boolean" Name="isTitleMatch" />
                                   <Variable x:TypeArguments="x:Boolean" Name="isExcluded" />
                                   <Variable x:TypeArguments="x:Boolean" Name="isValid" />
                                   <Variable x:TypeArguments="x:Boolean" Name="isMatch" />
@@ -372,13 +372,13 @@
                                     </ui:MultipleAssign.AssignOperations>
                                   </ui:MultipleAssign>
                                 </Sequence>
-                                <Sequence DisplayName="Sequence - Normalize Fields" sap:VirtualizedContainerService.HintSize="672,882" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                <Sequence DisplayName="Sequence - Normalize Fields" sap:VirtualizedContainerService.HintSize="672,628" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Assign Lower Title" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign DisplayName="Assign Lower Title" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_6">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">
                                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">LowerTitle</CSharpReference>
@@ -390,7 +390,7 @@
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Assign Clean Price" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign DisplayName="Assign Clean Price" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_2">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">
                                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">PriceText</CSharpReference>
@@ -402,7 +402,7 @@
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Assign Price Double" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign DisplayName="Assign Price Double" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_4">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Double">
                                         <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">Price</CSharpReference>
@@ -414,64 +414,14 @@
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,245" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-                                    <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <If sap2010:Annotation.AnnotationText="temporary condition - prevent empty string prices" sap:VirtualizedContainerService.HintSize="416,79" sap2010:WorkflowViewState.IdRef="If_2">
-                                          <If.Condition>
-                                            <InArgument x:TypeArguments="x:Boolean">
-                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">!string.IsNullOrWhiteSpace(PriceText)</CSharpValue>
-                                            </InArgument>
-                                          </If.Condition>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <If.Then>
-                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </Sequence>
-                                          </If.Then>
-                                          <If.Else>
-                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn">
-                                                <ui:LogMessage.Message>
-                                                  <InArgument x:TypeArguments="x:Object">
-                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"SKIP (no price): " + Title</CSharpValue>
-                                                  </InArgument>
-                                                </ui:LogMessage.Message>
-                                              </ui:LogMessage>
-                                            </Sequence>
-                                          </If.Else>
-                                        </If>
-                                      </Sequence>
-                                    </ui:CommentOut.Body>
-                                  </ui:CommentOut>
                                 </Sequence>
-                                <Sequence DisplayName="Sequence - Determine Product Type" sap:VirtualizedContainerService.HintSize="672,1384" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                <Sequence DisplayName="Sequence - Determine Product Type" sap:VirtualizedContainerService.HintSize="672,1416" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Assign Product Type" sap:VirtualizedContainerService.HintSize="638,175" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                  <Assign DisplayName="Assign Product Type" sap:VirtualizedContainerService.HintSize="638,179" sap2010:WorkflowViewState.IdRef="Assign_14">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">
                                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">ProductType</CSharpReference>
@@ -495,20 +445,20 @@
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:IfElseIfV2 sap2010:Annotation.AnnotationText="Determine Product Type that will be used in below switch case" DisplayName="Else If Determine Product Type" sap:VirtualizedContainerService.HintSize="638,930" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+                                  <ui:IfElseIfV2 sap2010:Annotation.AnnotationText="Determine Product Type that will be used in below switch case" DisplayName="Else If Determine Product Type" sap:VirtualizedContainerService.HintSize="638,958" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
                                     <ui:IfElseIfV2.Condition>
                                       <InArgument x:TypeArguments="x:Boolean">
                                         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">SearchTermNormalized.Contains("ddr5") || SearchTermNormalized.Contains("memory")</CSharpValue>
                                       </InArgument>
                                     </ui:IfElseIfV2.Condition>
                                     <ui:IfElseIfV2.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="636,226" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="636,234" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="602,166" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                        <Assign sap:VirtualizedContainerService.HintSize="602,170" sap2010:WorkflowViewState.IdRef="Assign_17">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">
                                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">ProductType</CSharpReference>
@@ -531,13 +481,13 @@
                                             </InArgument>
                                           </ui:IfElseIfBlock.Condition>
                                           <ui:IfElseIfBlock.Then>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="636,226" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="636,234" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="602,166" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                              <Assign sap:VirtualizedContainerService.HintSize="602,170" sap2010:WorkflowViewState.IdRef="Assign_16">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">
                                                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">ProductType</CSharpReference>
@@ -562,13 +512,13 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <ui:IfElseIfV2.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="636,226" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="636,234" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="602,166" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                        <Assign sap:VirtualizedContainerService.HintSize="602,170" sap2010:WorkflowViewState.IdRef="Assign_15">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">
                                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">ProductType</CSharpReference>
@@ -673,13 +623,13 @@
                                     </Sequence>
                                   </Switch>
                                 </Sequence>
-                                <Sequence DisplayName="Sequence Determine Validity" sap:VirtualizedContainerService.HintSize="672,1000" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                <Sequence DisplayName="Sequence Determine Validity" sap:VirtualizedContainerService.HintSize="672,659" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Assign in stock status" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                  <Assign DisplayName="Assign in stock status" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_5">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">
                                         <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">inStock</CSharpReference>
@@ -691,30 +641,7 @@
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,341" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-                                    <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_35">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <Assign DisplayName="Assign matching product name" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_8">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Boolean">
-                                              <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">isTitleMatch</CSharpReference>
-                                            </OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Boolean">
-                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">LowerTitle.Contains(SearchTermNormalized)</CSharpValue>
-                                            </InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </Sequence>
-                                    </ui:CommentOut.Body>
-                                  </ui:CommentOut>
-                                  <Assign sap2010:Annotation.AnnotationText="filter out prebuilt PC" DisplayName="Assign excluded product (filter)" sap:VirtualizedContainerService.HintSize="486,210" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                  <Assign sap2010:Annotation.AnnotationText="filter out prebuilt PC" DisplayName="Assign excluded product (filter)" sap:VirtualizedContainerService.HintSize="416,210" sap2010:WorkflowViewState.IdRef="Assign_9">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">
                                         <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">isExcluded</CSharpReference>
@@ -736,7 +663,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </Assign>
-                                  <Assign DisplayName="Assign Valid Product" sap:VirtualizedContainerService.HintSize="486,170" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                  <Assign DisplayName="Assign Valid Product" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_10">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">
                                         <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">isValid</CSharpReference>
