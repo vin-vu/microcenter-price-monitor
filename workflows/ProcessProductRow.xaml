@@ -116,13 +116,13 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1245,1717" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1238,1737" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Title" />
       <Variable x:TypeArguments="x:String" Name="PriceText" />
       <Variable x:TypeArguments="x:String" Name="Stock" />
       <Variable x:TypeArguments="x:String" Name="URL" />
-      <Variable x:TypeArguments="x:String" Name="LowerTitle" />
+      <Variable x:TypeArguments="x:String" Name="NormalizedTitle" />
       <Variable x:TypeArguments="x:Double" Name="Price" />
       <Variable x:TypeArguments="x:String" Name="ProductType" />
       <Variable x:TypeArguments="x:String" Name="SearchTermNormalized" />
@@ -209,7 +209,7 @@
       <Assign DisplayName="Assign Lower Title" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">
-            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">LowerTitle</CSharpReference>
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">NormalizedTitle</CSharpReference>
           </OutArgument>
         </Assign.To>
         <Assign.Value>
@@ -396,7 +396,7 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:Boolean">
-                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">LowerTitle.Contains(SearchTermNormalized)</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">NormalizedTitle.Contains(SearchTermNormalized)</CSharpValue>
                 </InArgument>
               </Assign.Value>
             </Assign>
@@ -427,7 +427,7 @@
             </Assign.To>
             <Assign.Value>
               <InArgument x:TypeArguments="x:Boolean">
-                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">LowerTitle.Contains("32gb") &amp;&amp; LowerTitle.Contains("ddr5")</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">NormalizedTitle.Contains("32gb") &amp;&amp; NormalizedTitle.Contains("ddr5")</CSharpValue>
               </InArgument>
             </Assign.Value>
           </Assign>
@@ -446,7 +446,7 @@
             </Assign.To>
             <Assign.Value>
               <InArgument x:TypeArguments="x:Boolean">
-                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">LowerTitle.Contains("2tb") &amp;&amp; (LowerTitle.Contains("nvme") || LowerTitle.Contains("ssd") || LowerTitle.Contains("m.2"))</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">NormalizedTitle.Contains("2tb") &amp;&amp; (NormalizedTitle.Contains("nvme") || NormalizedTitle.Contains("ssd") || NormalizedTitle.Contains("m.2"))</CSharpValue>
               </InArgument>
             </Assign.Value>
           </Assign>
@@ -480,12 +480,12 @@
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="x:Boolean">
-            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58" xml:space="preserve">LowerTitle.Contains("bundle")
-    || LowerTitle.Contains("gaming pc")
-	|| LowerTitle.Contains("laptop")
-    || LowerTitle.Contains("open box")
-    || LowerTitle.Contains("refurbished")
-	|| LowerTitle.Contains("workstation")</CSharpValue>
+            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58" xml:space="preserve">NormalizedTitle.Contains("bundle")
+    || NormalizedTitle.Contains("gaming pc")
+	|| NormalizedTitle.Contains("laptop")
+    || NormalizedTitle.Contains("open box")
+    || NormalizedTitle.Contains("refurbished")
+	|| NormalizedTitle.Contains("workstation")</CSharpValue>
           </InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
@@ -507,7 +507,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <If DisplayName="If Valid Product Row add to table" sap:VirtualizedContainerService.HintSize="549,1141" sap2010:WorkflowViewState.IdRef="If_1">
+    <If DisplayName="If Valid Product Row add to table" sap:VirtualizedContainerService.HintSize="549,1161" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">isValid</CSharpValue>
@@ -520,7 +520,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="547,986" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="547,1006" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataRow" Name="NewRow" />
           </Sequence.Variables>
@@ -529,14 +529,14 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Sequence - create new data row" sap:VirtualizedContainerService.HintSize="513,752" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Sequence - create and insert data row" sap:VirtualizedContainerService.HintSize="513,772" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign - new row" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="Assign_26">
+            <Assign DisplayName="Assign - new row" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="Assign_26">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataRow">
                   <CSharpReference x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpReference`1_50">NewRow</CSharpReference>
@@ -548,7 +548,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MultipleAssign DisplayName="Multiple Assign to row values" sap:VirtualizedContainerService.HintSize="479,273" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Multiple Assign to row values" sap:VirtualizedContainerService.HintSize="479,277" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -571,7 +571,7 @@
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">Title</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">NormalizedTitle</CSharpValue>
                       </InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
@@ -614,7 +614,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:AddDataRow ArrayRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="479,212" sap2010:WorkflowViewState.IdRef="AddDataRow_4">
+            <ui:AddDataRow ArrayRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="479,216" sap2010:WorkflowViewState.IdRef="AddDataRow_4">
               <ui:AddDataRow.DataRow>
                 <InArgument x:TypeArguments="sd:DataRow">
                   <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">NewRow</CSharpValue>
@@ -655,7 +655,7 @@
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
                   <ui:LogMessage.Message>
                     <InArgument x:TypeArguments="x:Object">
-                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64" xml:space="preserve">"IGNORE: " + LowerTitle + " - $" + Price.ToString() + " - match: " + isMatch  + " -  type: " + ProductType</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64" xml:space="preserve">"IGNORE: " + NormalizedTitle + " - $" + Price.ToString() + " - match: " + isMatch  + " -  type: " + ProductType</CSharpValue>
                     </InArgument>
                   </ui:LogMessage.Message>
                 </ui:LogMessage>
