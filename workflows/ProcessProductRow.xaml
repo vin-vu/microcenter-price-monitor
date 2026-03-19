@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="ProcessProductRow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_ProductTable" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="io_dtValidProductsTable" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_CurrentRow" Type="InArgument(sd:DataRow)" />
     <x:Property Name="in_SearchTerm" Type="InArgument(x:String)" />
   </x:Members>
@@ -113,7 +113,7 @@
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1245,1540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1323,1190" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Title" />
       <Variable x:TypeArguments="x:String" Name="PriceText" />
@@ -504,19 +504,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Assign sap:VirtualizedContainerService.HintSize="513,175" sap2010:WorkflowViewState.IdRef="Assign_25">
-      <Assign.To>
-        <OutArgument x:TypeArguments="sd:DataTable">
-          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">dtValidProducts</CSharpReference>
-        </OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="sd:DataTable">
-          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">in_ProductTable.Clone()</CSharpValue>
-        </InArgument>
-      </Assign.Value>
-    </Assign>
-    <If DisplayName="If Valid Product Row add to table" sap:VirtualizedContainerService.HintSize="513,623" sap2010:WorkflowViewState.IdRef="If_1">
+    <If DisplayName="If Valid Product Row add to table" sap:VirtualizedContainerService.HintSize="513,614" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">isValid</CSharpValue>
@@ -550,7 +538,7 @@
             </ui:AddDataRow.ArrayRow>
             <ui:AddDataRow.DataTable>
               <InOutArgument x:TypeArguments="sd:DataTable">
-                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_47">dtValidProducts</CSharpReference>
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">io_dtValidProductsTable</CSharpReference>
               </InOutArgument>
             </ui:AddDataRow.DataTable>
           </ui:AddDataRow>
@@ -585,12 +573,5 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="513,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
-      <ui:LogMessage.Message>
-        <InArgument x:TypeArguments="x:Object">
-          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">"row count: " + dtValidProducts.Rows.Count.ToString()</CSharpValue>
-        </InArgument>
-      </ui:LogMessage.Message>
-    </ui:LogMessage>
   </Sequence>
 </Activity>

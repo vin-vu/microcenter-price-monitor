@@ -4,7 +4,30 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "1f7b7f31-6e65-41ea-93ed-74564740b99e",
-      "type": "process"
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "io_dtValidProducts": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "io_dtValidProducts": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
     }
   ]
 }
