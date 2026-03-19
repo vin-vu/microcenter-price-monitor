@@ -311,7 +311,7 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ProcessProductRow - Invoke Workflow File (ProcessProductRow.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ProcessProductRow.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ProcessProductRow - Invoke Workflow File (ProcessProductRow.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="workflows\\ProcessProductRow.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="sd:DataRow" x:Key="in_CurrentRow">
                                       <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">CurrentRow</CSharpValue>
