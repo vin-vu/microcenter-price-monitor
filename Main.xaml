@@ -316,51 +316,9 @@
                                     <InArgument x:TypeArguments="sd:DataRow" x:Key="in_CurrentRow">
                                       <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">CurrentRow</CSharpValue>
                                     </InArgument>
-                                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtResults">
-                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">dtResults</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtProducts">
-                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">dtProducts</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="Title">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">Title</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="PriceText">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">PriceText</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="Stock">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">Stock</CSharpReference>
-                                    </InOutArgument>
-                                    <OutArgument x:TypeArguments="x:String" x:Key="URL">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">URL</CSharpReference>
-                                    </OutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="LowerTitle">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">LowerTitle</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Double" x:Key="Price">
-                                      <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">Price</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="ProductType">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">ProductType</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:String" x:Key="SearchTermNormalized">
-                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">SearchTermNormalized</CSharpReference>
-                                    </InOutArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_SearchTerm">
                                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">SearchTerm</CSharpValue>
                                     </InArgument>
-                                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="isMatch">
-                                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">isMatch</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="inStock">
-                                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">inStock</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="isExcluded">
-                                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">isExcluded</CSharpReference>
-                                    </InOutArgument>
-                                    <InOutArgument x:TypeArguments="x:Boolean" x:Key="isValid">
-                                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">isValid</CSharpReference>
-                                    </InOutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                               </Sequence>
