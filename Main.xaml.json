@@ -6,8 +6,8 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "out_ProductTable",
-      "DisplayName": "out_ProductTable",
+      "Name": "in_ProductTable",
+      "DisplayName": "in_ProductTable",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
